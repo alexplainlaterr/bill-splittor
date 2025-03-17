@@ -9,6 +9,8 @@ def split_bill():
         amount_spent = float(input(f"Enter amount spent by {name}: "))
         spends[name] = amount_spent
         total_spent += amount_spent
+    
+    print(f"\nYour subtotal should be: ${total_spent}")
 
     print("\nAmount each person should contribute:")
     for name, spent in spends.items():
